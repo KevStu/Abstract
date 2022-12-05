@@ -11,7 +11,7 @@ public class Main{
         JPanel panelTitle = new JPanel(new FlowLayout());
         JPanel panelOne = new JPanel(new GridLayout(2,2,1,1));
         JPanel panelTwo = new JPanel(new FlowLayout());
-        JButton button = new JButton("Click");
+        JButton button = new JButton("Save");
 
         panelTitle.setBounds(10,10,380,40);
         panelOne.setBounds(10,60,380,80);
@@ -21,15 +21,15 @@ public class Main{
         panelOne.setBackground(Color.GRAY);
         panelTwo.setBackground(Color.pink);
 
-        JLabel labelOne, labelTwo, labelTitle;
+        JLabel labelOne, labelTitle;
 
         JTextField tFieldOne;
         tFieldOne = new JTextField(20);
         tFieldOne.setPreferredSize(new Dimension(80,20));
 
 
-        labelTitle = new JLabel("Enter :", JLabel.CENTER);
-        labelOne = new JLabel("");
+        labelTitle = new JLabel("", JLabel.CENTER);
+        labelOne = new JLabel("Your Number");
 
 
         labelTitle.setBounds(10,10,90,20);
@@ -70,10 +70,10 @@ public class Main{
         frame.setVisible(true);
     }
     public static int computeValue(String value1){
-       int val1 = Integer.parseInt(value1);
+        int val1 = Integer.parseInt(value1);
         return val1;
     }
     public static void displayMessage(String message){
-       JOptionPane.showMessageDialog( null, message, "Result" , JOptionPane.INFORMATION_MESSAGE );
+        JOptionPane.showMessageDialog( null, message, "Saved Number" , JOptionPane.INFORMATION_MESSAGE );
     }
 }
