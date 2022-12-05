@@ -28,8 +28,8 @@ public class Main{
         tFieldOne.setPreferredSize(new Dimension(80,20));
 
 
-        labelTitle = new JLabel("Enter required:", JLabel.CENTER);
-        labelOne = new JLabel("First Value");
+        labelTitle = new JLabel("Enter :", JLabel.CENTER);
+        labelOne = new JLabel("");
 
 
         labelTitle.setBounds(10,10,90,20);
